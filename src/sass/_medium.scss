@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 102.6px 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    background-image: url('../../dist/img/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper {
+    max-width: 650px;
+  }
+
+  .nav {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .header {
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+    height: 100%;
+
+    &__hero {
+      background-image: url('../../dist/img/hero-desktop.jpg');
+      background-position: top;
+    }
+  }
+
+  .main {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-self: center;
+
+    &__container {
+      text-align: left;
+    }
+
+    &__title {
+      letter-spacing: 20px;
+      font-size: 6.2rem;
+    }
+
+    &__text {
+      font-size: 2rem;
+    }
+
+    &__send {
+      &-input {
+        font-size: 1.8rem;
+      }
+
+      &-btn {
+        padding: 0 3.4em;
+      }
+    }
+  }
+}
