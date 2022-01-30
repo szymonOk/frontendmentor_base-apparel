@@ -32,12 +32,16 @@
                 <p class="main__text">Hello fellow shoppers! We're currently building our new fashion store.
                     Add your email below to stay up-to-date with announcements and our launch deals.</p>
                 <div class="main__send">
-                    <form>
-                        <input class="main__send-input" type="text" placeholder="Email Address">
+                    <form action="https://formsubmit.io/send/8b539637-1654-4be8-9108-aeabf38387e0 " method="POST">
+                        <input name="_redirect" type="hidden" id="name"
+                            value="https://szymonok.github.io/frontendmentor_base-apparel/">
+                        <input name="email" class="main__send-input" type="text" placeholder="Email Address">
                         <img class="main__send-error" src="./dist/img/icon-error.svg" alt="">
+                        <input name="_formsubmit_id" type="text" style="display:none">
                         <button type="submit" class="main__send-btn"><i class="fas fa-chevron-right"></i></button>
                     </form>
                 </div>
+                <p class="error-msg">Please provide a valid email</p>
             </div>
         </div>
     </main>

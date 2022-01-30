@@ -37,6 +37,15 @@ body {
 }
 
 .main {
+  .error-msg {
+    visibility: hidden;
+    align-self: flex-start;
+    font-size: 1.7rem;
+    color: $soft-red;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -74,7 +83,7 @@ body {
       padding: 1em 2em;
       border-radius: 50px;
       border: 1px solid $des-red;
-      color: $soft-red;
+      color: $des-red;
       font-size: 1.5rem;
       transition: background 0.3s;
 
@@ -86,9 +95,9 @@ body {
     }
 
     &-error {
-      display: none;
+      visibility: hidden;
       position: absolute;
-      right: 25%;
+      right: 30%;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -109,7 +118,6 @@ body {
       );
       cursor: pointer;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      transition: background 0.2s;
 
       i {
         color: white;
@@ -122,6 +130,21 @@ body {
           $second-gradient-1,
           $second-gradient-1
         );
+        transform: translateY(-51%) scale(1.05);
+      }
+    }
+
+    &.error {
+      ~ .error-msg {
+        visibility: visible;
+      }
+
+      .main__send-error {
+        visibility: visible;
+      }
+
+      .main__send-input {
+        border: 3px solid $soft-red;
       }
     }
   }
