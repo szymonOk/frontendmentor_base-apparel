@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/szymonOk/frontendmentor_loopstudios
-- Live Site URL: https://szymonok.github.io/frontendmentor_loopstudios/
+- Solution URL: https://github.com/szymonOk/frontendmentor_base-apparel
+- Live Site URL: https://szymonok.github.io/frontendmentor_base-apparel
 
 ### Built with
 
